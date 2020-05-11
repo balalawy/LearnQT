@@ -83,6 +83,7 @@
     <ClCompile Include="HBoxLayout.cpp" />
     <ClCompile Include="LayoutLearn.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="VBoxLayout.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LayoutLearn.h" />
@@ -95,6 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="HBoxLayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VBoxLayout.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

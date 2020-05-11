@@ -1,5 +1,6 @@
 #include "LayoutLearn.h"
 #include "HBoxLayout.h"
+#include "VBoxLayout.h"
 
 #include <QtWidgets/QApplication>
 
@@ -11,7 +12,9 @@ int main(int argc, char *argv[])
 	HBoxLayout* hBoxLayoutDemo = new HBoxLayout;
 	hBoxLayoutDemo->show();
 
-
+	// ´¹Ö±²¼¾Ö
+	VBoxLayout* vBoxLayoutDemo = new VBoxLayout;
+	vBoxLayoutDemo->show();
 
 	return a.exec();
 }
