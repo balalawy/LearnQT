@@ -2,6 +2,7 @@
 #include "HBoxLayout.h"
 #include "VBoxLayout.h"
 #include "GridLayout.h"
+#include "FormLayout.h"
 
 #include <QtWidgets/QApplication>
 
@@ -20,6 +21,10 @@ int main(int argc, char *argv[])
 	// 网格布局
 	GridLayout* gridLayoutDemo = new GridLayout;
 	gridLayoutDemo->show();
+
+	// 表格布局
+	FormLayout* formLayoutDemo = new FormLayout;
+	formLayoutDemo->show();
 
 	return a.exec();
 }

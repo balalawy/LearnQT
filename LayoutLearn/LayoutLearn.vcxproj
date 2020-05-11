@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FormLayout.cpp" />
     <ClCompile Include="GridLayout.cpp" />
     <ClCompile Include="HBoxLayout.cpp" />
     <ClCompile Include="LayoutLearn.cpp" />
@@ -99,6 +100,7 @@
     <QtMoc Include="HBoxLayout.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FormLayout.h" />
     <ClInclude Include="GridLayout.h" />
     <ClInclude Include="VBoxLayout.h" />
   </ItemGroup>
