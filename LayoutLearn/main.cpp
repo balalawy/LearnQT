@@ -3,13 +3,14 @@
 #include "VBoxLayout.h"
 #include "GridLayout.h"
 #include "FormLayout.h"
+#include "AddressBook.h"
 
 #include <QtWidgets/QApplication>
 
-int main(int argc, char *argv[])
-{
-	QApplication a(argc, argv);
 
+// 学习布局
+void learnLayout()
+{
 	// 水平布局
 	HBoxLayout* hBoxLayoutDemo = new HBoxLayout;
 	hBoxLayoutDemo->show();
@@ -25,6 +26,24 @@ int main(int argc, char *argv[])
 	// 表格布局
 	FormLayout* formLayoutDemo = new FormLayout;
 	formLayoutDemo->show();
+}
+
+
+// 布局案例：AddressBook
+void layoutDemo_AddressBook()
+{
+	AddressBook* addressbook = new AddressBook;
+	addressbook->show();
+}
+
+
+int main(int argc, char *argv[])
+{
+	QApplication a(argc, argv);
+
+	// learnLayout();  // 学习布局
+
+	layoutDemo_AddressBook();  // 布局案例：AddressBook
 
 	return a.exec();
 }
