@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GridLayout.cpp" />
     <ClCompile Include="HBoxLayout.cpp" />
     <ClCompile Include="LayoutLearn.cpp" />
     <ClCompile Include="main.cpp" />
@@ -98,6 +99,7 @@
     <QtMoc Include="HBoxLayout.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GridLayout.h" />
     <ClInclude Include="VBoxLayout.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

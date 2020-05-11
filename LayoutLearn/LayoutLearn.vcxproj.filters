@@ -37,6 +37,9 @@
     <ClCompile Include="VBoxLayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GridLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LayoutLearn.h">
@@ -58,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VBoxLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridLayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
