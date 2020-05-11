@@ -31,9 +31,15 @@
     <ClCompile Include="LayoutLearn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HBoxLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LayoutLearn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="HBoxLayout.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
