@@ -5,6 +5,7 @@
 #include "FormLayout.h"
 #include "AddressBook.h"
 #include "CardLayout.h"
+#include "BorderLayout.h"
 
 #include <QtWidgets/QApplication>
 
@@ -60,6 +61,34 @@ void layoutDemo_Cards()
 }
 
 
+// 布局案例: BorderDemo
+// 创建一个label控件
+QLabel* createLabel(const QString& text)
+{
+	QLabel* label = new QLabel(text);
+	label->setFrameStyle(QFrame::Box | QFrame::Raised);
+	return label;
+}
+
+void layoutDemo_BorderDemo()
+{
+	QTextBrowser* centralWidget = new QTextBrowser;
+	centralWidget->setPlainText(QObject::tr("Central widget"));
+
+	BorderLayout* layout = new BorderLayout;
+	layout->addWidget(centralWidget, BorderLayout::Center);
+	layout->addWidget(createLabel("North"), BorderLayout::North);
+	layout->addWidget(createLabel("West"), BorderLayout::West);
+	layout->addWidget(createLabel("East 1"), BorderLayout::East);
+	layout->addWidget(createLabel("East 2"), BorderLayout::East);
+	layout->addWidget(createLabel("South"), BorderLayout::South);
+
+	QWidget* window = new QWidget;
+	window->setLayout(layout);
+	window->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -68,7 +97,9 @@ int main(int argc, char *argv[])
 
 	// layoutDemo_AddressBook();  // 布局案例：AddressBook
 
-	layoutDemo_Cards();  // 布局案例: Cards
+	// layoutDemo_Cards();  // 布局案例: Cards
+
+	layoutDemo_BorderDemo();  // 布局案例: BorderDemo
 
 	return a.exec();
 }
