@@ -52,6 +52,9 @@
     <ClCompile Include="BorderLayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LayoutLearn.h">
@@ -88,6 +91,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BorderLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

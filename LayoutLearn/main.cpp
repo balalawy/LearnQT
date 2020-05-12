@@ -6,6 +6,7 @@
 #include "AddressBook.h"
 #include "CardLayout.h"
 #include "BorderLayout.h"
+#include "Calculator.h"
 
 #include <QtWidgets/QApplication>
 
@@ -89,6 +90,15 @@ void layoutDemo_BorderDemo()
 }
 
 
+// 布局案例:Calculator
+void layoutDemo_Caluculator()
+{
+	Calculator* cal = new Calculator;
+	cal->setWindowTitle("calculator");
+	cal->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -99,7 +109,9 @@ int main(int argc, char *argv[])
 
 	// layoutDemo_Cards();  // 布局案例: Cards
 
-	layoutDemo_BorderDemo();  // 布局案例: BorderDemo
+	// layoutDemo_BorderDemo();  // 布局案例: BorderDemo
+
+	layoutDemo_Caluculator();
 
 	return a.exec();
 }
