@@ -39,6 +39,9 @@
     <QtMoc Include="WidgetsLearn.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="CheckBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="WidgetsLearn.ui">
@@ -49,10 +52,5 @@
     <QtRcc Include="WidgetsLearn.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CheckBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

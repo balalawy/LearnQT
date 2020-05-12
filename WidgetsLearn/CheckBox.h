@@ -7,8 +7,7 @@
 class CheckBox :
 	public QWidget
 {
-
-
+	Q_OBJECT
 public:
 	CheckBox(QWidget* parent = Q_NULLPTR);
 

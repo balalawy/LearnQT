@@ -5,8 +5,8 @@
 
 void checkBox_Demo()
 {
-	CheckBox w;
-	w.show();
+	CheckBox* w = new CheckBox;
+	w->show();
 }
 
 
