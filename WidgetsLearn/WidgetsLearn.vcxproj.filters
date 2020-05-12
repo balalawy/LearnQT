@@ -34,12 +34,18 @@
     <ClCompile Include="CheckBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="WidgetsLearn.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="CheckBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ComboBox.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
