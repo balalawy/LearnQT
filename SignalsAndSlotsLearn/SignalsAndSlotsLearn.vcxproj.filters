@@ -39,6 +39,9 @@
     <QtMoc Include="SignalsAndSlotsLearn.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Counter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="SignalsAndSlotsLearn.ui">
@@ -49,10 +52,5 @@
     <QtRcc Include="SignalsAndSlotsLearn.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Counter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

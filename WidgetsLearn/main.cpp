@@ -3,7 +3,6 @@
 
 #include "CheckBox.h"
 
-
 void checkBox_Demo()
 {
 	CheckBox w;
