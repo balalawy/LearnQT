@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CheckBox.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="WidgetsLearn.cpp" />
   </ItemGroup>
@@ -91,6 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="WidgetsLearn.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CheckBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
