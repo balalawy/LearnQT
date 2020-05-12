@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddressBook.cpp" />
+    <ClCompile Include="CardLayout.cpp" />
     <ClCompile Include="FormLayout.cpp" />
     <ClCompile Include="GridLayout.cpp" />
     <ClCompile Include="HBoxLayout.cpp" />
@@ -102,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddressBook.h" />
+    <ClInclude Include="CardLayout.h" />
     <ClInclude Include="FormLayout.h" />
     <ClInclude Include="GridLayout.h" />
     <ClInclude Include="VBoxLayout.h" />
