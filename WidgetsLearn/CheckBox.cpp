@@ -6,9 +6,8 @@ CheckBox::CheckBox(QWidget* parent)
 	//  A shortcut key can be specified by preceding the preferred character with an ampersand
 	QCheckBox* checkbox = new QCheckBox("C&ase sensitive", this);
 	
-	connect(checkbox, &QCheckBox::stateChanged, []() {
+	connect(checkbox, &QCheckBox::stateChanged, this, [=]() {
 		qDebug() << "state changed";
-
 	});
 
 	// TODO QCheckBox信号stateChanged无法被处理

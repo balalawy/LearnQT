@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LayoutLearn", "LayoutLearn.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WidgetsLearn", "..\WidgetsLearn\WidgetsLearn.vcxproj", "{3724FFFB-CE51-4AB9-959B-D85115BF052E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SignalsAndSlotsLearn", "..\SignalsAndSlotsLearn\SignalsAndSlotsLearn.vcxproj", "{1FF7A568-7383-46C4-90D2-C3C8C6450207}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{3724FFFB-CE51-4AB9-959B-D85115BF052E}.Debug|x64.Build.0 = Debug|x64
 		{3724FFFB-CE51-4AB9-959B-D85115BF052E}.Release|x64.ActiveCfg = Release|x64
 		{3724FFFB-CE51-4AB9-959B-D85115BF052E}.Release|x64.Build.0 = Release|x64
+		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Debug|x64.ActiveCfg = Debug|x64
+		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Debug|x64.Build.0 = Debug|x64
+		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Release|x64.ActiveCfg = Release|x64
+		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

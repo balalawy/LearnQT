@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>SignalsAndSlotsLearnClass</class>
+ <widget class="QWidget" name="SignalsAndSlotsLearnClass" >
+  <property name="objectName" >
+   <string notr="true">SignalsAndSlotsLearnClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>SignalsAndSlotsLearn</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="SignalsAndSlotsLearn.qrc"/>
+ </resources>
+ <connections/>
+</UI>
