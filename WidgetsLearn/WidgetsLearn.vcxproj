@@ -88,6 +88,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ProgressBar.cpp" />
     <ClCompile Include="PushButton.cpp" />
+    <ClCompile Include="TabBar.cpp" />
     <ClCompile Include="WidgetsLearn.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="PushButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="TabBar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
