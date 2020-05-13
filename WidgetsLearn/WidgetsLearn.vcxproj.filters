@@ -40,6 +40,9 @@
     <ClCompile Include="Label.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="WidgetsLearn.h">
@@ -52,6 +55,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Label.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LineEdit.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

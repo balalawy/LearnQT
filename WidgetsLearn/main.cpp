@@ -4,6 +4,7 @@
 #include "CheckBox.h"
 #include "ComboBox.h"
 #include "Label.h"
+#include "LineEdit.h"
 
 
 void checkBox_Demo()
@@ -27,13 +28,21 @@ void Label_Demo()
 }
 
 
+void lineEdit_Demo()
+{
+	LineEdit* edit = new LineEdit;
+	edit->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
 	// checkBox_Demo();	// 复选框QCheckBox
 	// comboBox_Demo(); // 组合框QComboBox
-	Label_Demo();	// 标签QLabel
+	// Label_Demo();	// 标签QLabel
+	lineEdit_Demo();
 
 	return a.exec();
 }
