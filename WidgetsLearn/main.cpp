@@ -7,6 +7,7 @@
 #include "LineEdit.h"
 #include "Menu.h"
 #include "ProgressBar.h"
+#include "PushButton.h"
 
 
 void checkBox_Demo()
@@ -51,6 +52,13 @@ void progressBar_Demo()
 }
 
 
+void pushButton_Demo()
+{
+	PushButton* pushButton = new PushButton;
+	pushButton->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -60,7 +68,8 @@ int main(int argc, char *argv[])
 	// Label_Demo();	// 标签QLabel
 	// lineEdit_Demo();  // 单行文本框QLineText
 	// menu_Demo();		// 菜单项QMenu
-	progressBar_Demo();  // 进度条QProgressBar
+	// progressBar_Demo();  // 进度条QProgressBar
+	pushButton_Demo();
 
 	return a.exec();
 }
