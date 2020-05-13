@@ -3,6 +3,7 @@
 
 #include "CheckBox.h"
 #include "ComboBox.h"
+#include "Label.h"
 
 
 void checkBox_Demo()
@@ -19,12 +20,20 @@ void comboBox_Demo()
 }
 
 
+void Label_Demo()
+{
+	Label* label = new Label;
+	label->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
 	// checkBox_Demo();	// 复选框QCheckBox
-	comboBox_Demo();
+	// comboBox_Demo(); // 组合框QComboBox
+	Label_Demo();	// 标签QLabel
 
 	return a.exec();
 }
