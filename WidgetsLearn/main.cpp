@@ -9,6 +9,7 @@
 #include "ProgressBar.h"
 #include "PushButton.h"
 #include "TabBar.h"
+#include "TabWidget.h"
 
 
 void checkBox_Demo()
@@ -67,6 +68,13 @@ void tabBar_Demo()
 }
 
 
+void tabWidget_Demo()
+{
+	TabWidget* tabWidget = new TabWidget;
+	tabWidget->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -78,7 +86,9 @@ int main(int argc, char *argv[])
 	// menu_Demo();		// 菜单项QMenu
 	// progressBar_Demo();  // 进度条QProgressBar
 	// pushButton_Demo();  // 按钮QPushButton
-	tabBar_Demo();
+	// tabBar_Demo();	// 选项卡tabBar
+	tabWidget_Demo();
+
 
 	return a.exec();
 }
