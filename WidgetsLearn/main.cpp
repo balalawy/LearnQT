@@ -5,6 +5,7 @@
 #include "ComboBox.h"
 #include "Label.h"
 #include "LineEdit.h"
+#include "Menu.h"
 
 
 void checkBox_Demo()
@@ -35,6 +36,13 @@ void lineEdit_Demo()
 }
 
 
+void menu_Demo()
+{
+	Menu* menu = new Menu();
+	// menu->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -42,7 +50,8 @@ int main(int argc, char *argv[])
 	// checkBox_Demo();	// 复选框QCheckBox
 	// comboBox_Demo(); // 组合框QComboBox
 	// Label_Demo();	// 标签QLabel
-	lineEdit_Demo();
+	// lineEdit_Demo();  // 单行文本框QLineText
+	menu_Demo();
 
 	return a.exec();
 }

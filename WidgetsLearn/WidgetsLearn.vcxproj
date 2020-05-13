@@ -85,6 +85,7 @@
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="LineEdit.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="WidgetsLearn.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LineEdit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
