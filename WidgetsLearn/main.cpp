@@ -6,6 +6,7 @@
 #include "Label.h"
 #include "LineEdit.h"
 #include "Menu.h"
+#include "ProgressBar.h"
 
 
 void checkBox_Demo()
@@ -43,6 +44,13 @@ void menu_Demo()
 }
 
 
+void progressBar_Demo()
+{
+	ProgressBar* progressBar = new ProgressBar;
+	progressBar->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -51,7 +59,8 @@ int main(int argc, char *argv[])
 	// comboBox_Demo(); // 组合框QComboBox
 	// Label_Demo();	// 标签QLabel
 	// lineEdit_Demo();  // 单行文本框QLineText
-	menu_Demo();
+	// menu_Demo();		// 菜单项QMenu
+	progressBar_Demo();  // 进度条QProgressBar
 
 	return a.exec();
 }
