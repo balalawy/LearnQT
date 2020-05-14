@@ -11,6 +11,7 @@
 #include <qstringlist.h>
 #include <qabstractitemmodel.h>
 #include <qtableview.h>
+#include "FileSystem.h"
 
 
 void fileDemo()
@@ -63,13 +64,21 @@ void usingView_Demo()
 }
 
 
+void fileSystem_Demo()
+{
+	FileSystem* fileSystem = new FileSystem;
+	fileSystem->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
 	// fileDemo();
 	// usingModel_Demo();
-	usingView_Demo();
+	// usingView_Demo();
+	fileSystem_Demo();
 
 	return a.exec();
 }
