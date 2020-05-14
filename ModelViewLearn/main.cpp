@@ -12,6 +12,7 @@
 #include <qabstractitemmodel.h>
 #include <qtableview.h>
 #include "FileSystem.h"
+#include <qstandarditemmodel.h>
 
 
 void fileDemo()
@@ -71,6 +72,39 @@ void fileSystem_Demo()
 }
 
 
+void custom_treeModel_Demo()
+{
+
+	QStandardItemModel* model = new QStandardItemModel;//创建模型
+	model->setHorizontalHeaderLabels(QStringList()
+		<< QStringLiteral("项目名") << QStringLiteral("相关信息1")
+		<< QStringLiteral("相关信息2"));
+
+	QStandardItem* item = new QStandardItem("item one");//创建一个条目对象
+	// 第0行 -----> 0 row
+	model->appendRow(item);//通过模型对象添加这个条目
+	model->item(0)->appendRow(new QStandardItem("msg one"));
+	model->item(0)->appendRow(new QStandardItem("msg two"));
+	model->item(0)->appendRow(new QStandardItem("msg three"));
+
+	// 第1行 -----> 1 row
+	model->appendRow(new QStandardItem("item two"));
+	model->setItem(1, 1, new QStandardItem("ex msg 1"));
+
+	// 第2行 -----> 2 row
+	model->setItem(2, 0, new QStandardItem("item three"));
+	model->item(2)->appendRow(new QStandardItem("msg one"));
+	model->item(2)->appendRow(new QStandardItem("msg two"));
+	model->item(2)->appendRow(new QStandardItem("msg three"));
+	model->item(2)->appendRow(new QStandardItem("msg four"));
+
+
+	QTreeView* treeView = new QTreeView;
+	treeView->setModel(model);
+	treeView->show();
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -78,7 +112,8 @@ int main(int argc, char *argv[])
 	// fileDemo();
 	// usingModel_Demo();
 	// usingView_Demo();
-	fileSystem_Demo();
+	// fileSystem_Demo();
+	custom_treeModel_Demo();
 
 	return a.exec();
 }
