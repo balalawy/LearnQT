@@ -31,9 +31,15 @@
     <ClCompile Include="ModelViewLearn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ModelViewLearn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FileDemo.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
