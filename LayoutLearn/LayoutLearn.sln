@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WidgetsLearn", "..\WidgetsL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SignalsAndSlotsLearn", "..\SignalsAndSlotsLearn\SignalsAndSlotsLearn.vcxproj", "{1FF7A568-7383-46C4-90D2-C3C8C6450207}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelViewLearn", "..\ModelViewLearn\ModelViewLearn.vcxproj", "{A69D4D00-136C-4069-9363-838955928AEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,10 @@ Global
 		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Debug|x64.Build.0 = Debug|x64
 		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Release|x64.ActiveCfg = Release|x64
 		{1FF7A568-7383-46C4-90D2-C3C8C6450207}.Release|x64.Build.0 = Release|x64
+		{A69D4D00-136C-4069-9363-838955928AEE}.Debug|x64.ActiveCfg = Debug|x64
+		{A69D4D00-136C-4069-9363-838955928AEE}.Debug|x64.Build.0 = Debug|x64
+		{A69D4D00-136C-4069-9363-838955928AEE}.Release|x64.ActiveCfg = Release|x64
+		{A69D4D00-136C-4069-9363-838955928AEE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
