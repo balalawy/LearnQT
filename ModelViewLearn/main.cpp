@@ -6,7 +6,11 @@
 #include <qobject.h>
 #include <qdir.h>
 #include <qdebug.h>
-
+#include <qlistview.h>
+#include <qstringlistmodel.h>
+#include <qstringlist.h>
+#include <qabstractitemmodel.h>
+#include <qtableview.h>
 
 
 void fileDemo()
@@ -36,12 +40,36 @@ void usingModel_Demo()
 }
 
 
+void usingView_Demo()
+{
+	QStringList numbers;
+	numbers << "One" << "Two" << "Three" << "Four" << "Five";
+
+	QAbstractItemModel* model = new QStringListModel(numbers);
+	QListView* view = new QListView;
+	view->setModel(model);
+	view->show();
+
+	QTableView* firstTableView = new QTableView;
+	QTableView* secondTableView = new QTableView;
+
+	firstTableView->setModel(model);
+	secondTableView->setModel(model);
+
+	firstTableView->show();
+	secondTableView->show();
+
+	secondTableView->setSelectionModel(firstTableView->selectionModel());
+}
+
+
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
 	// fileDemo();
-	usingModel_Demo();
+	// usingModel_Demo();
+	usingView_Demo();
 
 	return a.exec();
 }
